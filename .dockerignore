@@ -1,9 +1,23 @@
-# IDE files
+# Git / Version Control
+.git/
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# IDEs and Editors
 .idea/
 .vscode/
+*.swp
+*.swo
+*~
 
 # Environments
 .env
+.env.example
 .venv
 env/
 venv/
@@ -31,9 +45,24 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Project files
+# Testing, typing & linting caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Logs & local databases
 logs/
+*.log
+*.sqlite3
+*.db
 temp_roles_db.json
-.gitignore
+
+# Project documentation & repo metadata
 README.md
-LICENSE
+.github/

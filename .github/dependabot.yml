@@ -13,7 +13,6 @@ updates:
       include: "scope"
     labels:
       - "dependencies"
-      - "actions"
 
   # Keep Python dependencies (requirements.txt) up to date
   - package-ecosystem: "pip"
@@ -35,7 +34,6 @@ updates:
       include: "scope"
     labels:
       - "dependencies"
-      - "python"
     allow:
       - dependency-type: "all"
     insecure-external-code-execution: "deny"
