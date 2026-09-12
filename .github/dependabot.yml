@@ -13,6 +13,7 @@ updates:
       include: "scope"
     labels:
       - "dependencies"
+      - "github-actions"
 
   # Keep Python dependencies (requirements.txt) up to date
   - package-ecosystem: "pip"
