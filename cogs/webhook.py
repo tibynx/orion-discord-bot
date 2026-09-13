@@ -294,7 +294,8 @@ class WebhookPaginationView(discord.ui.View):
         )
         return embed
 
-    @discord.ui.button(label="Previous", style=discord.ButtonStyle.secondary)
+    # Previous page button
+    @discord.ui.button(style=discord.ButtonStyle.secondary)
     async def prev_page(self, interaction: discord.Interaction, button: discord.ui.Button) -> None:
         """Go to the previous page of webhooks."""
         if self.current_page > 0:
@@ -304,7 +305,8 @@ class WebhookPaginationView(discord.ui.View):
         else:
             await interaction.response.defer()
 
-    @discord.ui.button(label="Next", style=discord.ButtonStyle.secondary)
+    # Next page button
+    @discord.ui.button(style=discord.ButtonStyle.secondary)
     async def next_page(self, interaction: discord.Interaction, button: discord.ui.Button) -> None:
         """Go to the next page of webhooks."""
         if self.current_page < self.total_pages - 1:
